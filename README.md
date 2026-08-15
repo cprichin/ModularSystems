@@ -1,7 +1,6 @@
 
 Hi! While AI was used to create these READMEs and the BUILDING.MDs, any actual code is all me! This series is how I'll be teaching myself Go, as well as the inner workings of some of these backend systems.
 Feel free to follow along, or just use the snippets I've written! (I can't quite guarantee that they'll be the best options for you, however)
--Chris
 
 # ModularSystems — A Tutorial Series
 
