@@ -134,6 +134,10 @@ func (l *loader) duration(key string, def time.Duration) time.Duration {
 		l.fail("%s=%q is not a valid duration", key, v)
 		return def
 	}
+	if t < 0 {
+		l.fail("%s=%q must be a POSITIVE duration", key, v)
+		return def
+	}
 	return t
 
 }
