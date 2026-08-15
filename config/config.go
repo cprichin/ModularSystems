@@ -143,7 +143,7 @@ func Load(ENVPATH string) (Config, []string, error) {
 	l := &loader{}
 	err := godotenv.Load(ENVPATH)
 	if err != nil {
-		l.fail("Error loading .env from path %s", ENVPATH)
+		l.warn("Unable to load .env from path %s. Fetching from host instead", ENVPATH)
 	}
 	cfg := Config{
 		server: Servercfg{
